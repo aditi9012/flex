@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flexbox</title>
+	<style>
+	@media (min-width: 900px)
+	{
+		.call-outs-container
+		{
+			display:flex;
+			justify-content:space-between;
+		}
+	}
+	.form-row{
+		padding:10px 0;
+		display: flex;
+	}
+	.form-row lable{
+		padding-right: 30px ;
+	}
+	.form-row input{
+		 flex: 1;
+	}
+	.column-layout{
+		max-width: 1300px;
+		background-color: #FFF;
+		margin: 90px auto 0 auto;
+		line-height: 1;
+		padding: 50px 70px;
+		display: flex;
+	}
+	.main-column{
+      flex: 2;
+      order: 2;
+	}
+	.sidebar-one{
+       flex: 1;
+       order: 1;
+	}
+	.sidebar-two{
+		 flex: 1;
+		 order: 3;
+
+	}
+	.call-outs-container{
+		max-width: 1400px;
+		margin:40 px auto 0auto;
+		
+	}
+	.call-out{
+		flex: 1;
+		padding: 20px;
+		margin-bottom: 20px;
+		width: 30%;
+	}
+	.call-out:nth-child(1){background-color: green;}
+	.call-out:nth-child(2){background-color: pink;}
+	.call-out:nth-child(3){background-color: blue;}
+	.equal-height-container{
+		max-width: 900px;
+		margin 0 auto;
+          display: flex;
+          justify-content: space-around;
+
+
+	}
+	.first{
+		background-color: green;
+		padding: 20px;
+		flex: 1;
+		justify-content: space-around;
+
+	}
+	.second{
+		background-color: yellow;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+	.second-a{
+		background-color: blue;
+		flex: 1;
+
+	}
+	.second-b{
+		background-color: purple;
+		flex: 1;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<form action="">
+			<div class="form-row">
+				<label for="name">Name:</label>
+				<input type="text" id="name">
+			</div>
+			<div class="form-row">
+				<label for="favcolor">Favcolor:</label>
+				<input type="text" id="favcolor">
+			</div>
+		</form>
+	</div>
+
+<div class="column-layout">
+	<div class="main-column">
+		<h2>Main Column</h2>
+		<p>Nature can refer to the general realm of living plants and animals, and in some cases to the processes associated with inanimate objects—the way that particular types of things exist and change of their own accord, such as the weather and geology of the Earth.</p>
+		<p>It is often taken to mean the "natural environment" or wilderness—wild animals, rocks, forest, and in general those things that have not been substantially altered by human intervention, or which persist despite human intervention. For example, manufactured objects and human interaction generally are not considered part of nature, unless qualified as, for example, "human nature" or "the whole of nature".</p>
+		<p>This more traditional concept of natural things which can still be found today implies a distinction between the natural and the artificial, with the artificial being understood as that which has been brought into being by a human consciousness or a human mind. Depending on the particular context, the term "natural" might also be distinguished from the unnatural or the supernatural.</p>
+	</div>
+	<div class="sidebar-one">
+		<h3>sidebar-one</h3>
+		<p>For other uses, see Nature (disambiguation).
+"Natural" redirects here. For other uses, see Natural (disambiguation).</p>
+</div>
+<div class="sidebar-two">
+	<h3>sidebar-two</h3>
+	<p>Nature, in the broadest sense, is the natural, physical, or material world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in general.</p>
+</div>
+</div>
+<div class="call-outs-container">
+	<div class="call-out">
+		<h4>Feature 1</h4>
+		<p>For other uses, see Nature (disambiguation). "Natural" redirects here. For other uses, see Natural (disambiguation).
+		</p>
+	</div>
+	<div class="call-out">
+		<h4>Feature 2</h4>
+		<p>For other uses, see Nature (disambiguation). "Natural" redirects here. For other uses, see Natural (disambiguation).</p>
+	</div>
+	<div class="call-out">
+		<h4>Feature 3</h4>
+		<p>For other uses, see Nature (disambiguation). "Natural" redirects here. For other uses, see Natural (disambiguation).</p>
+	</div>
+</div>
+<center>
+<div class="equal-height-container">
+	<div class="first">
+		<p>jkhkajfhekjsdhkjdklcbkbzjkbkjnjncsjk.call-out:nth-child(1){background-color: green;}</p>
+		<p>jkhkajfhekjsdhkjdklcbkbzjkbkjnjncsjk.call-out:nth-child(1){background-color: green;}</p>
+		<p>jkhkajfhekjsdhkjdklcbkbzjkbkjnjncsjk.call-out:nth-child(1){background-color: green;}</p>
+	</div>
+	<div class="second">
+		<div class="second-a">A</div>
+		<div class="second-b">B</div>
+	</div>
+</div>
+</center>
+	</body>
+	</html>
